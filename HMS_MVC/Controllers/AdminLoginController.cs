@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace HMS_MVC.Controllers
 {
-    public class HomeController : Controller
+    public class AdminLoginController : Controller
     {
-        // GET: Home
+        // GET: AdminLogin
         public ActionResult Index()
         {
             return View();

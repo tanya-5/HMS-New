@@ -4,14 +4,13 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace HMS_WebAPI.Controllers
+namespace HMS_MVC.Controllers
 {
-    public class HomeController : Controller
+    public class CustomerLoginController : Controller
     {
+        // GET: CustomerLogin
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
-
             return View();
         }
     }

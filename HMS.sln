@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HMS_MVC", "HMS_MVC\HMS_MVC.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HMS_WebAPI", "HMS_WebAPI\HMS_WebAPI.csproj", "{AC5A12FF-B897-496D-A440-DA3833CB543C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{EDCBCFAA-1EB5-4C95-B781-8FF76B7CE107}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{AC5A12FF-B897-496D-A440-DA3833CB543C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC5A12FF-B897-496D-A440-DA3833CB543C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC5A12FF-B897-496D-A440-DA3833CB543C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDCBCFAA-1EB5-4C95-B781-8FF76B7CE107}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDCBCFAA-1EB5-4C95-B781-8FF76B7CE107}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDCBCFAA-1EB5-4C95-B781-8FF76B7CE107}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDCBCFAA-1EB5-4C95-B781-8FF76B7CE107}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
