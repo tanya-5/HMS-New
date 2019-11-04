@@ -10,14 +10,15 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
-    <script src="Scripts/jquery-3.4.1.min.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script type="text/javascript">
-        $(document).ready(function () {
+        function allcus() {
 
             jQuery.support.cors = true;
             $.ajax({
 
-                url: 'api/AdminApi',
+                url: '/api/AdminApi',
                 type: 'GET',
                 datatype: 'json',
                 success: function (data) {
@@ -28,22 +29,26 @@
                 }
             });
 
-            function WriteResponses(Customers) {
+            function WriteResponses(data) {
                 var strResult = "<table border=1><th>Book Id</th><th>Book Title</th><th>Year</th><th>Price</th><th>Genre</th>";
-                $.each(customers, function (index, customer) {
-                    strResult += "<tr><td>" + customer + "</td><td>" + customer.c + "</td><td>" + book.Year + "</td><td>" + book.Price + "</td><td>" + book.Genre + "</td></tr>";
+                $.each(data, function (index, customer) {
+                    strResult += "<tr><td>" + customer.CustomerId + "</td><td>" + customer.CustomerName + "</td><td>" + customer.Gender + "</td><td>" + customer.ContactNo + "</td><td>" + customer.Address + "</td></tr>";
                 });
                 strResult += "</table>";
                 $("#divResult").html(strResult);
             }
         }
-        )
+        
 
 
 
     </script>
 </head>
 <body>
+    <div id="divResult">
+
+    </div>
+    <input type="button" value="xyz" onclick="allcus()" />
     <h1>List Of Books</h1>
     <div id="divResult" style="margin-left:15px"></div>
 </body>

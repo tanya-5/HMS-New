@@ -13,9 +13,9 @@ namespace HMS_WebAPI.Controllers
     {
         HMSEntities hms = new HMSEntities();
         
-        public IEnumerable<Customer> GetCustomers()
+        public IEnumerable<Customer> Get()
         {
-            return hms.Customers;
+            return hms.Customers.ToList();
         }
 
     }
